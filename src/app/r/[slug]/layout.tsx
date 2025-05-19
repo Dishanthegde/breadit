@@ -7,6 +7,11 @@ import Link from "next/link"
 import { notFound } from "next/navigation"
 import { ReactNode } from "react"
 
+interface LayoutProps {
+  children: ReactNode
+  params: { slug: string }
+}
+
 const Layout = async({
     children, 
     params:{ slug },
